@@ -28,8 +28,20 @@ Vercel Engineering의 React 및 Next.js 성능 최적화 가이드라인입니�
 - 렌더링 성능 (Medium)
 - JavaScript 마이크로 최적화 (Low-Medium)
 
-## 스킬 구조
+### composition-patterns
 
-각 스킬에는 다음이 포함됩니다:
+확장 가능한 React composition 패턴입니다. compound 컴포넌트, 상태 끌어올리기, 내부 구성으로 boolean prop 남발을 피하도록 돕습니다.
 
-- `SKILL.md` - 에이전트용 지침
+**다음 상황에서 사용:**
+
+- 불리언 prop이 많은 컴포넌트 리팩터링
+- 재사용 가능한 컴포넌트 라이브러리 구축
+- 유연한 API 설계
+- 컴포넌트 아키텍처 리뷰
+
+**포함된 패턴:**
+
+- compound 컴포넌트 추출
+- prop을 줄이기 위한 상태 끌어올리기
+- 유연성을 위한 내부 구성
+- prop drilling 방지
